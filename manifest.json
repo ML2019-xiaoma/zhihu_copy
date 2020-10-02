@@ -1,0 +1,17 @@
+{
+    "name": "allow copy",
+    "description": "解锁知乎复制限制",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.zhihu.com/*"
+            ],
+            "js": [
+                "js/copy.js"
+            ],
+            "run_at": "document_start"
+        }
+    ]
+}
